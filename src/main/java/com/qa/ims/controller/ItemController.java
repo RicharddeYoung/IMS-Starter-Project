@@ -70,6 +70,8 @@ public class ItemController implements CrudController<Item> {
 
 	/**
 	 * Deletes an existing item by the id of the item
+	 * 
+	 * @return
 	 */
 	@Override
 	public int delete() {
