@@ -1,10 +1,10 @@
-drop schema ims;
+drop schema imsstarterproject;
 
-CREATE SCHEMA IF NOT EXISTS `ims`;
+CREATE SCHEMA IF NOT EXISTS `imsstarterproject`;
 
-USE `ims` ;
+USE `imsstarterproject` ;
 
-CREATE TABLE IF NOT EXISTS `ims`.`customers` (
+CREATE TABLE IF NOT EXISTS `imsstarterproject`.`customers` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
     `first_name` VARCHAR(40) DEFAULT NULL,
     `surname` VARCHAR(40) DEFAULT NULL,
