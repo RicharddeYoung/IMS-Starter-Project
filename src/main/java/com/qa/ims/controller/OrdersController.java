@@ -57,16 +57,16 @@ public class OrdersController implements CrudController<Orders> {
 		Long orderId = utils.getLong();
 		LOGGER.info("Would you like to add to, or remove an item from an order?");
 		String addOrDelete = utils.getString();
-		if (addOrDelete=="add") {
+		if (addOrDelete.equals("add")) {
 			LOGGER.info("Please enter the id of the item you wish to add to the order");
 			Long itemId = utils.getLong();			
-			Orders orders = ordersDAO.addItem(new Orders(orderId, itemId));
+			Orders orders = ordersDAO.addItem(orderId, itemId);
 			LOGGER.info("Order Updated");
 			return orders;
-		} else if (addOrDelete=="remove") {
+		} else if (addOrDelete.equals("remove")) {
 			LOGGER.info("Please enter the id of the item you wish to remove from the order");
 			Long itemId = utils.getLong();
-			Orders orders = ordersDAO.deleteItem(new Orders(orderId, itemId));
+			Orders orders = ordersDAO.deleteItem(orderId, itemId);
 			LOGGER.info("Order updated");
 			return orders;
 		} else {

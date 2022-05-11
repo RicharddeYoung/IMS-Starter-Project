@@ -54,7 +54,10 @@ public class Orders {
 
 	@Override
 	public String toString() {
-		return "Orders [orderId=" + orderId + ", customerId=" + customerId + ", orderItems=" + orderItems + "]";
+		double orderPrice = 0;
+		for (Item i : orderItems)
+			orderPrice += i.getItemPrice();
+		return "Orders [orderId=" + orderId + ", customerId=" + customerId + ", orderItems=" + orderItems + "]\nOrder Total: £" + orderPrice;
 	}
 
 	@Override
