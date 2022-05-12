@@ -80,7 +80,7 @@ public class ItemDAO implements Dao<Item> {
 			LOGGER.debug(e);
 			LOGGER.error(e.getMessage());
 		}
-		return null;
+		return item;
 	}
 	
 	@Override
@@ -114,6 +114,7 @@ public class ItemDAO implements Dao<Item> {
 			statement.setString(1, item.getItemName());
 			statement.setDouble(2, item.getItemPrice());
 			statement.setLong(3,  item.getId());
+			statement.executeUpdate();
 			return read(item.getId());
 		} catch (Exception e) {
 			LOGGER.debug(e);

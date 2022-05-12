@@ -144,7 +144,7 @@ public class OrdersDAO implements Dao<Orders> {
 	public Orders addItem(Long orderId, Long itemId) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				PreparedStatement statement = connection
-				.prepareStatement("INSERT INTO order_items (fk_order_id, fk_item_id) VALUES (?, ?)")) {
+						.prepareStatement("INSERT INTO order_items (fk_order_id, fk_item_id) VALUES (?, ?)")) {
 			statement.setLong(1, orderId);
 			statement.setLong(2, itemId);
 			statement.executeUpdate();
@@ -164,7 +164,7 @@ public class OrdersDAO implements Dao<Orders> {
 	public Orders deleteItem(Long orderId, Long itemId) {
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				PreparedStatement statement = connection
-						.prepareStatement("DELETE FROM order_items (fk_order_id, fk_item_id) VALUES (?,?)")) {
+						.prepareStatement("DELETE FROM order_items WHERE fk_order_id = ? AND fk_item_id = ? LIMIT 1")) {
 			statement.setLong(1, orderId);
 			statement.setLong(2, itemId);
 			statement.executeUpdate();
