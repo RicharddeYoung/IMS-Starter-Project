@@ -1,37 +1,17 @@
-Coverage: 34%
-# Project Title
+# Inventory Management System
 
-One Paragraph of project description goes here
+An application that enables a user to create, update and delete customers, items and orders to and from a database.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This application can be found in the repository on GitHub - https://github.com/RicharddeYoung/IMS-Starter-Project.git
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project was written with:
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+* [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - Visual Database Design Tool
+* [Eclipse](https://eclipse.org/downloads/) - Integrated Development Environment
 
 ## Running the tests
 
@@ -66,7 +46,14 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [Git](https://git-scm.com/) - Version Control System
+* [GitHub](https://github.com/) - Source Code Management
+* [Jira](https://start.atlassian.com/) - Kanban Board
+* [MySQLServer](https://dev.mysql.com/) - Database Management System
+* [Java](https://java.com/) - Back-End Programming Language
+* [Maven](https://maven.apache.org/) - Build Tool
+* [JUnit](https://junit.org/) - Unit Testing
+* [Mockito](https://site.mockito.org/) - Mock Testing
 
 ## Versioning
 
@@ -75,6 +62,7 @@ We use [SemVer](http://semver.org/) for versioning.
 ## Authors
 
 * **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+* **Richard de Young** - *Updated version* - [RicharddeYoung](https://github.com/RicharddeYoung)
 
 ## License
 
@@ -84,6 +72,4 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thank you to Pawel and the rest of the cohort for invaluable help in fixing and streamlining parts of my code
