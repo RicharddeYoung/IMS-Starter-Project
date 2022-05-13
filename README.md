@@ -1,80 +1,47 @@
-Coverage: 34%
-# Project Title
+# Inventory Management System Project
 
-One Paragraph of project description goes here
+An application that enables a user to create, update and delete customers, items and orders to and from a database.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This application can be found in the repository on GitHub - https://github.com/RicharddeYoung/IMS-Starter-Project.git
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project was written with:
 
-```
-Give examples
-```
+* [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - Visual Database Design Tool
+* [Eclipse](https://eclipse.org/downloads/) - Integrated Development Environment
+* [Maven](https://maven.apache.org/) & [JUnit](https://juit.org/) - Building and executing tests
+* [git Bash](https://git-scm.com/) - Terminal for running programme once built
 
-### Installing
+## Building
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+In order to build a working version of this programme, you must first enter the repository folder downloaded from GitHub (above) and moved into the target folder. From there, open git Bash into the folder and type `mvn clean package`. Once that is complete, type `java -jar ims-0.0.1-jar-with-dependencies`.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
+Once you have the code open within your preffered IDE, you need to select the top level of the src/test/java and launch as Unit Test to begin testing.
 
 ### Unit Tests 
 
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### Integration Tests 
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+The unit tests are designed to test the core files of the programme, as well as the most basic methods for each class. This includes the CRUD and Controller tests. The tests are run with set results expected and are only able to pass when the test return matches the expected results for each test.
 
 ## Built With
 
-* [Maven](https://maven.apache.org/) - Dependency Management
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning.
+* [Git](https://git-scm.com/) - Version Control System
+* [GitHub](https://github.com/) - Source Code Management
+* [Jira](https://start.atlassian.com/) - Kanban Board
+* [MySQLServer](https://dev.mysql.com/) - Database Management System
+* [Java](https://java.com/) - Back-End Programming Language
+* [Maven](https://maven.apache.org/) - Build Tool
+* [JUnit](https://junit.org/) - Unit Testing
+* [Mockito](https://site.mockito.org/) - Mock Testing
 
 ## Authors
 
 * **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+* **Richard de Young** - *Updated version* - [RicharddeYoung](https://github.com/RicharddeYoung)
 
 ## License
 
@@ -84,6 +51,4 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thank you to Pawel and the rest of the cohort for invaluable help in fixing and streamlining parts of my code
