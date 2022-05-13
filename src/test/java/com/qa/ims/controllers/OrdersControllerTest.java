@@ -66,7 +66,7 @@ public class OrdersControllerTest {
 		Mockito.when(this.utils.getLong()).thenReturn(updated.getOrderId());
 		Mockito.when(this.utils.getString()).thenReturn("add");
 		Mockito.when(this.utils.getLong()).thenReturn(1L);
-		Mockito.when(this.dao.getItems(1L)).thenReturn(updated.getOrderItems());
+//		Mockito.when(this.dao.getItems(1L)).thenReturn(updated.getOrderItems());
 		Mockito.when(this.dao.addItem(1L, 1L)).thenReturn(updated);
 		
 		assertEquals(updated, this.controller.update());
